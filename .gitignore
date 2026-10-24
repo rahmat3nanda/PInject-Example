@@ -1,0 +1,58 @@
+# Xcode & Build Artifacts
+build/
+DerivedData/
+*.xcarchive
+*.xcframework
+*.xcresult
+*.profdata
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+xcuserdata/
+*.xcuserstate
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# Swift Package Manager & Xcode Cache
+.build/
+Packages/
+Package.resolved
+.swiftpm/
+.netrc
+
+# IDE & Editor Configurations
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*~
+*.bak
+
+# macOS System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+
+# Environment & Local Secrets
+*.env
+*.env.*
+*.private.swift
+*.local
