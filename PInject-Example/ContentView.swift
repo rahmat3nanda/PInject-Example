@@ -6,19 +6,43 @@
 //
 
 import SwiftUI
+import PInject
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            NavigationStack {
+                AuthDemoView()
+            }
+            .tabItem {
+                Label("Auth (@Inject)", systemImage: "person.badge.key.fill")
+            }
+
+            NavigationStack {
+                TransientDemoView()
+            }
+            .tabItem {
+                Label("Transient", systemImage: "arrow.triangle.2.circlepath")
+            }
+
+            NavigationStack {
+                AnalyticsLogsView()
+            }
+            .tabItem {
+                Label("Analytics", systemImage: "chart.xyaxis.line")
+            }
+
+            NavigationStack {
+                ContainerInspectorView()
+            }
+            .tabItem {
+                Label("Inspector", systemImage: "slider.horizontal.3")
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    AppDependencies.setup()
+    return ContentView()
 }

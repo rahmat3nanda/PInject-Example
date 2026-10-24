@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF63A162308CC8FD000CD626 /* PInject in Frameworks */ = {isa = PBXBuildFile; productRef = AF63A161308CC8FD000CD626 /* PInject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AF63A152308CBCEE000CD626 /* PInject-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PInject-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -22,6 +26,7 @@
 		AF63A14F308CBCEE000CD626 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				AF63A162308CC8FD000CD626 /* PInject in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 				AF63A154308CBCEE000CD626 /* PInject-Example */,
 			);
 			name = "PInject-Example";
+			packageProductDependencies = (
+				AF63A161308CC8FD000CD626 /* PInject */,
+			);
 			productName = "PInject-Example";
 			productReference = AF63A152308CBCEE000CD626 /* PInject-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -88,6 +96,9 @@
 			);
 			mainGroup = AF63A149308CBCEE000CD626;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF63A160308CC8FD000CD626 /* XCRemoteSwiftPackageReference "PInject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF63A153308CBCEE000CD626 /* Products */;
 			projectDirPath = "";
@@ -254,10 +265,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "id.nesd.PInject-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,7 +282,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 12.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -298,10 +309,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "id.nesd.PInject-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,7 +326,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 12.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -339,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF63A160308CC8FD000CD626 /* XCRemoteSwiftPackageReference "PInject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rahmat3nanda/PInject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF63A161308CC8FD000CD626 /* PInject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF63A160308CC8FD000CD626 /* XCRemoteSwiftPackageReference "PInject" */;
+			productName = PInject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF63A14A308CBCEE000CD626 /* Project object */;
 	validationLevel = 1;

@@ -6,9 +6,16 @@
 //
 
 import SwiftUI
+import PInject
 
 @main
 struct PInject_ExampleApp: App {
+
+    init() {
+        // Bootstrap all application dependencies into PIContainer.shared
+        AppDependencies.setup()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
